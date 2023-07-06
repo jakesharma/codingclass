@@ -1,0 +1,408 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingClass</title>
+
+    <link rel="icon" type="image/png" href="image/codingclasslogo2.png" />
+
+    <!-- ----------- for text typing animation CDN----------- -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <!-- ----------for animation scroll----------- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ----------For Bootstrap 5.3 CDN Link---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ----------For Javascripe 5.3 CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <!-- ----------For JQuery.js CDN Link---------- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+
+    <!-- ----------Popper.js CDN Link---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+
+    <!-- ----------for Font Awesome---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="whatsapp-float p-3 fs-1" style="position: fixed; bottom: 0; right: 0;">
+        <a href="https://wa.me/919784344782" target="_blank">
+            <i class="fa-brands fa-whatsapp "></i>
+        </a>
+    </div>
+
+    <div class="container-fluid">
+        <nav class="row navbar navbar-expand-xl sticky-top bg-secondary shadow-sm">
+            <div class="container w-100">
+                <a href="index.php" class="navbar-brand text-white fs-3 px-3 text-decoration-none" id="logo">
+                    <!-- <img src="image/codingclasslogo-1 copy.png" alt="" width="20%" class="texy-white">  -->
+                    CodingClass
+                </a>
+
+                <button type="button" class="navbar-toggler text-white bg-body-secondary" data-bs-toggle="collapse"
+                    data-bs-target="#for-menu-icon">
+                    <span class="navbar-toggler-icon"></span><span class="text-dark p-1">Menu</span>
+                </button>
+
+                <div class="collapse navbar-collapse d-xl-flex justify-content-end " id="for-menu-icon">
+                    <ul class="navbar-nav fs-5  gap-3 align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#assignment">Assignment</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#about" data-bs-toggle="dropdown">Tuition &
+                                Fess</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="Tuition_fees.php">Tuition Fees</a></li>
+                                <li><a class="dropdown-item" href="students_form.php" target="_blank">Tuition Join</a>
+                                </li>
+                                <li><a class='dropdown-item d-none' href='online_payment.php' target='_blank'>Fees
+                                        Now</a>
+                                </li>
+                                <li><a class='dropdown-item' href='online_payment.php' target='_blank'>Fees Now</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='nav-item'><a class='nav-link' href='login.php'>Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!------------First Section------------>
+        <div class="row d-flex justify-content-between align-items-center " id="home">
+            <div class="col-xl-6 col-lg-12 p-5 order-xl-first order-sm-last">
+                <h2 class="fw-bold p-2">
+                    INTELLIGENCE PLUS CHARACTER THAT IS THE GOAL OF TRUE EDUCATION</h2>
+            </div>
+            <div class="col-xl-6 col-lg-12  order-xl-last order-sm-first">
+                <img src="image/home1-1.png" class="img-fluid" alt="" width="100%">
+            </div>
+        </div>
+
+        <!------------Second Section------------>
+        <div class="row  pt-5" id="about">
+            <div class="col-xl-6 col-lg-12 pt-5">
+                <img src="image/home2-2.png" alt="" width="100%">
+            </div>
+            <div class="col-xl-6 col-lg-12 pt-5 text-center">
+                <div class="row">
+                    <div class="col-12 text-uppercase d-flex gap-3 justify-content-center">
+                        <button type="button" class="btn" id="about-us" onclick="about_us()"
+                            style="background-color: var(--lightgray); color: white;">
+                            About me</button>
+                        <button type="button" class="btn" id="skill" onclick="skills()">Skills</button>
+                        <button type="button" class="btn" id="experience" onclick="experience()">Experience</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 py-3 lh-base" id="about_mode">
+                        <h3>My Story</h3>
+                        <p class="text-muted">Far far away, behind the word mountains, far from the
+                            countries
+                            Vokalia
+                            and Consonantia, there
+                            live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                            of
+                            the Semantics, a large language ocean.</p>
+                        <h5 class="mt-5 text-primary">I Do Web Design & Developement since I was 18 Years
+                            Old
+                        </h5>
+                        <p class="text-muted">Far far away, behind the word mountains, far from the
+                            countries
+                            Vokalia
+                            and Consonantia, there live the blind texts.
+                        </p>
+                    </div>
+                    <div class="col-12 py-3 lh-base" id="skill_mode">
+                        <h3>Skills</h3>
+                        <p class="text-muted">Far far away, behind the word mountains, far from the
+                            countries
+                            Vokalia
+                            and
+                            Consonantia,
+                            there
+                            live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                            of
+                            the
+                            Semantics,
+                            a large language ocean.</p>
+                        <div class="row d-flex flex-wrap gap-3" id="skill-level">
+                            <div class="col-6 lh-1 w-100" id="level">
+                                <p>PHOTOSHOP</p>
+                                <div class="progress">
+                                    <div id="progress-color"
+                                        class="progress-bar progress-bar-striped progress-bar-animated"
+                                        style="width: 50%;">
+                                        50%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 lh-1 w-100" id="level">
+                                <p>HTML</p>
+                                <div class="progress">
+                                    <div id="progress-color"
+                                        class="progress-bar progress-bar-striped progress-bar-animated"
+                                        style="width: 80%;">
+                                        80%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 lh-1 w-100" id="level">
+                                <p>CSS/BOOstrape 5</p>
+                                <div class="progress">
+                                    <div id="progress-color"
+                                        class="progress-bar progress-bar-striped progress-bar-animated"
+                                        style="width: 50%;">
+                                        50%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 lh-1 w-100" id="level">
+                                <p>WORDPRESS</p>
+                                <div class="progress">
+                                    <div id="progress-color"
+                                        class="progress-bar progress-bar-striped progress-bar-animated"
+                                        style="width: 50%;">
+                                        50%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 py-3" id="experience_mode">
+                        <div class="row d-flex gap-3">
+                            <div class="col-12 lh-base">
+                                <p class="fw-bold">Art & Creative Director</p>
+                                <p class="text-primary">2014-2015 <span class="text-muted">Google
+                                        Inc.</span>
+                                </p>
+                                <p class="text-muted">A small river named Duden flows by their place and
+                                    supplies it
+                                    with the necessary regelialia.</p>
+                            </div>
+                            <div class="col-12 lh-base">
+                                <p class="fw-bold">Wordpress Developer</p>
+                                <p class="text-primary">2015-2017 <span class="text-muted">Google
+                                        Inc.</span>
+                                </p>
+                                <p class="text-muted">A small river named Duden flows by their place and
+                                    supplies it
+                                    with the necessary regelialia.</p>
+                            </div>
+                            <div class="col-12 lh-base">
+                                <p class="fw-bold">UI/UX Designer</p>
+                                <p class="text-primary">2018-2020 <span class="text-muted">Google
+                                        Inc.</span>
+                                </p>
+                                <p class="text-muted">A small river named Duden flows by their place and
+                                    supplies it
+                                    with the necessary regelialia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row p-5 text-center" id="assignment">
+            <h1 class="p-3">Assignment</h1>
+            <div class="col-12 px-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header ">
+                            <button class="accordion-button bg-secondary text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                New Assignment!
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="collapseOne">
+                            <div class="accordion-body text-start">
+                                <strong>Print array</strong>
+                                <p>
+                                    Make id in list tag using looping
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button
+                            bg-secondary text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsetwo">
+                                New Assignment!
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapsetwo">
+                            <div class="accordion-body text-start">
+                                <strong>Sum Array</strong>
+                                <p>
+                                    Sum of array element using looping
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button
+                            bg-secondary text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsethree">
+                                New Assignment!
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapsethree">
+                            <div class="accordion-body text-start">
+                                <strong>Validation</strong>
+                                <p>
+                                    check number only in input and accept only number
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ----------Services---------- -->
+        <div class="row p-5 text-black" id="services">
+            <h1 class="text-center fs-1 p-5">Services</h1>
+            <div class="col-12 d-flex justify-content-center flex-wrap gap-5 pb-4 text-center">
+                <div class="col-xl-3 col-md-12 bg-white shadow-sm py-3 px-3" id="services-item">
+                    <img src="image/featurelogo2.png" alt="" width="30%" class="">
+                    <h4 class="pt-0">Online Class</h4>
+                    <p class="pt-3">The language for styling web pages.</p>
+                </div>
+                <div class="col-xl-3 col-md-12 bg-white shadow-sm py-3 px-3" id="services-item">
+                    <img src="image/featurelogo3.png" alt="" width="30%" class="">
+                    <h4 class="pt-0">Tutorials</h4>
+                    <p class="pt-3">The language for styling web pages.</p>
+                </div>
+                <div class="col-xl-3 col-md-12 bg-white shadow-sm py-3 px-3 " id="services-item">
+                    <img src="image/featurelogo1.png" alt="" width="30%" class="">
+                    <h4 class="pt-0">Assignment</h4>
+                    <p class="pt-3">We can Assignment work by sir and we can learn it.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -----------Rank----------- -->
+        <div class="row bg-secondary text-center p-5">
+            <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-start d-flex justify-content-center align-items-center gap-3 text-white">
+                <i class="fa fa-users fs-1"></i>
+                <div class="rank lh-1">
+                    <h2 id="counter">100</h2>
+                    <p>HAPPY Students</p>
+                </div>
+            </div>
+            <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-start d-flex justify-content-center align-items-center gap-3 text-white">
+                <i class="fa fa-project-diagram fs-1"></i>
+                <div class="rank lh-1">
+                    <h2 id="counter">50</h2>
+                    <p>PROJECT COMPLETED</p>
+                </div>
+            </div>
+            <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-start d-flex justify-content-center align-items-center gap-3 text-white">
+                <i class="fa fa-coffee fs-1 "></i>
+                <div class="rank lh-1">
+                    <h2 id="counter">200</h2>
+                    <p>CUPS OF COFFEE</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------Contact----------- -->
+        <div class="row p-5 " id="contact">
+            <div class="col-12 d-xl-flex gap-3 justify-content-center">
+                <div class="col-xl-8 col-lg-12 bg-white shadow-sm d-grid gap-4 p-5">
+                    <h1>Contact</h1>
+                    <div class="row g-4">
+                        <div class="col-xl-6 col-lg-12">
+                            <input width="100%" type="text" class="form-control" placeholder="Name*" required>
+                        </div>
+                        <div class="col-xl-6 col-lg-12">
+                            <input width="100%" type="email" class="form-control" placeholder="Email*" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-xl-6 col-lg-12">
+                            <input type="text" class="form-control" placeholder="Subject*" required>
+                        </div>
+                        <div class="col-xl-6 col-lg-12">
+                            <input type="number" class="form-control" placeholder="Number*" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea class="form-control" placeholder="Create a message here" cols="30" rows="5">
+                    </textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-outline-secondary">SEND MESSAGE</button>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-12 my-auto bg-white shadow-sm p-3">
+                    <h1>Information</h1>
+                    <div class="row d-xl-inline d-lg-flex justify-content-center">
+                        <div class="col-12 lh-sm px-3 gap-3 d-flex">
+                            <i class="fa fa-map-location-dot"></i>
+                            <address><a class="text-decoration-none " href="#"> Kote Gate Under, Jothiwada</a></address>
+                        </div>
+                        <div class="col-12 lh-sm px-3 gap-3 d-flex">
+                            <i class="fa fa-message"></i>
+                            <p><a class="text-decoration-none " href="#">codingclass@gmail.com</a> </p>
+                        </div>
+                        <div class="col-12 lh-sm px-3 gap-3 d-flex">
+                            <i class="fa fa-phone"></i>
+                            <p><a class="text-decoration-none " href="#"> +91-1234567890</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------Footer---------- -->
+        <footer class="row footer text-center">
+            <div class="col-12 mt-3">
+                <p>© Copyright 2019 CodingClass | Made by ❤️️<span class="text-primary">Jake Sharma</span></p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+:root {
+    --black-color-1: #282828;
+    --black-color-2: #202020;
+    --black-color-3: #333333;
+    --lightgray: #6C757D;
+    --background-color: #edf0f4;
+    --white-light-mode-color1: #FBFBFD;
+    --blue-light-mode-color2: #EFF4F9;
+}
+
+body {
+    background-color: var(--blue-light-mode-color2);
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*-------------This is for switch of about us-------------*/
+#about_us {
+    color: var(--lightgray);
+}
+
+#about_mode {
+    display: block;
+}
+
+#skill_mode {
+    display: none;
+}
+
+#experience_mode {
+    display: none;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover {
+    color: black;
+}
+
+/*-------------End-------------*/
+
+/* -----This is will Automatic dark when in window is also dark---- */
+/* 
+@media (prefers-color-scheme: light) {
+    .container-fluid {
+        color: black;
+        background: var(--blue-light-mode-color2);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container-fluid {
+        color: #eee;
+        background: black;
+    }
+} */
+
+/* #counter{
+    animation: counter 5s infinite alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    
+}
+
+#counter::after{
+    content: counter(num);
+}
+
+@keyframes counter{
+    from {
+        --num: 0;
+    }
+    to{
+        --num: 100;
+    }
+} */
