@@ -49,3 +49,8 @@ function Experience() {
     document.getElementById("skill").style.color = "black";
     document.getElementById("about-us").style.color = "black";
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toast = new bootstrap.Toast(document.getElementById('myToast'));
+    toast.show();
+});

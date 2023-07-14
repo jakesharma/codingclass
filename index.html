@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodingClass</title>
 
-    <link rel="icon" type="image/png" href="image/codingclasslogo2.png" />
+    <link rel="icon" type="image/png" class="text-white bg-white" href="image/codingclass_icon.png" />
 
     <!-- ----------- for text typing animation CDN----------- -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
@@ -49,7 +49,30 @@
         </a>
     </div>
 
-    <div class="container-fluid">
+    <div class='toast-container position-fixed bottom-0 start-0 p-3 ' data-aos='fade-up'>
+        <div id='myToast' class='toast  shadow-sm' role='alert' aria-live='assertive' aria-atomic='true'
+            data-bs-autohide='false' data-aos-anchor-placement='top-bottom' style='background: #DEF1F7' ;color: #2686A6>
+            <div class='toast-header' style='background: #DEF1F7; color: #2686A6'>
+                <i class='fas fa-info-circle fa-lg me-2 '></i>
+                <strong class='me-auto'>Tuition Class</strong>
+                <button type='button' class='btn-close' data-bs-dismiss='toast' aria-label='Close'></button>
+            </div>
+            <div class='toast-body' style='color: #2686A6'>
+                Make Your Student Registration and our🤗Join Class.
+                <div class='row d-flex'>
+                    <div class='col-10 text-end my-auto'>
+                        <i class='fas fa-hand-point-right fs-3 px-3 d-none'></i>
+                    </div>
+                    <div class='col-2'>
+                        <a href='student_form.php' class='nav-link d-flex justify-content-end shadow-sm'><button
+                                class='btn btn-secondary '>Join</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative" style="min-height: 100vh">
         <nav class="row navbar navbar-expand-xl sticky-top bg-secondary shadow-sm">
             <div class="container w-100">
                 <a href="index.php" class="navbar-brand text-white fs-3 px-3 text-decoration-none" id="logo">
@@ -92,19 +115,19 @@
 
 
         <!------------First Section------------>
-        <div class="row d-flex justify-content-between align-items-center " id="home">
+        <div class="row d-flex justify-content-between align-items-center p-0" id="home">
             <div class="col-xl-6 col-lg-12 p-5 order-xl-first order-sm-last">
                 <h2 class="fw-bold p-2">
                     INTELLIGENCE PLUS CHARACTER THAT IS THE GOAL OF TRUE EDUCATION</h2>
             </div>
-            <div class="col-xl-6 col-lg-12  order-xl-last order-sm-first">
-                <img src="image/home1-1.png" class="img-fluid" alt="" width="100%">
+            <div class="col-xl-6 col-lg-12  order-xl-last order-sm-first p-0">
+                <img src="image/home1-1.png" class="img-fluid " alt="" width="100%">
             </div>
         </div>
 
         <!------------Second Section------------>
-        <div class="row  pt-5" id="about">
-            <div class="col-xl-6 col-lg-12 pt-5">
+        <div class="row pt-5" id="about">
+            <div class="col-xl-6 col-lg-12 p-0">
                 <img src="image/home2-2.png" alt="" width="100%">
             </div>
             <div class="col-xl-6 col-lg-12 pt-5 text-center">
@@ -227,6 +250,7 @@
             </div>
         </div>
 
+
         <!------------Assignment------------>
         <div class="row px-2 py-5 text-center" id="assignment">
             <h1 class="p-3">Assignment</h1>
@@ -289,25 +313,358 @@
             </div>
         </div>
 
-
         <!-- ----------Services---------- -->
         <div class="row px-4 py-5 text-black" id="services">
-            <h1 class="text-center fs-1  mb-5">Services</h1>
-            <div class="col-12 d-flex justify-content-center flex-wrap gap-5 pb-4 text-center">
-                <div class="col-xl-3 col-md-12 bg-white shadow-sm p-3" id="services-item">
-                    <img src="image/featurelogo2.png" alt="" width="30%" class="">
+            <h1 class="text-center fs-1 mb-5">Services</h1>
+            <div
+                class="row row-cols-xl-4 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 d-flex justify-content-center mx-auto flex-wrap gap-5 pb-4 text-center">
+                <div class="col bg-white shadow-sm p-3" id="services-item">
+                    <img src="image/featurelogo2.png" alt="" width="100px" class="">
+                    <!-- <i class="fa-solid fa-desktop bg-warning text-white fs-1 p-4 rounded-circle"></i> -->
                     <h4 class="pt-3">Online Class</h4>
                     <p class="pt-3">The language for styling web pages.</p>
                 </div>
-                <div class="col-xl-3 col-md-12 bg-white shadow-sm p-3" id="services-item">
-                    <img src="image/featurelogo3.png" alt="" width="30%" class="">
+                <div class="col bg-white shadow-sm p-3" id="services-item">
+                    <img src="image/featurelogo3.png" alt="" width="100px" class="">
                     <h4 class="pt-3">Tutorials</h4>
                     <p class="pt-3">The language for styling web pages.</p>
                 </div>
-                <div class="col-xl-3 col-md-12 bg-white shadow-sm p-3 " id="services-item">
-                    <img src="image/featurelogo1.png" alt="" width="30%" class="">
+                <div class="col bg-white shadow-sm p-3 " id="services-item">
+                    <img src="image/featurelogo1.png" alt="" width="100px" class="">
                     <h4 class="pt-3">Assignment</h4>
                     <p class="pt-3">We can Assignment work by sir and we can learn it.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Teacher -->
+        <div class="team px-5 py-5">
+            <h1 class="text-center fs-1 mb-5">Our Friendly Teachers</h1>
+            <div class="row row-cols-xxl-4 row-cols-xl-4 row-cols-lg-2 row-cols-md-2 row-cols-sm-2 g-5 px-xl-5">
+                <div class="col ">
+                    <div class="card shadow-sm bg-white">
+                        <img src="image/team/team-1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">Walter White</h4>
+                            <p class="border-bottom">B.Tech, M.Tech</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-header d-flex flex-wrap gap-3 py-3">
+                            <a href=""><i
+                                    class="fa-brands fa-twitter bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-facebook bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-instagram bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-linkedin bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col  ">
+                    <div class="card shadow-sm bg-white">
+                        <img src="image/team/team-4.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">Amanda Jepson</h4>
+                            <p class="border-bottom">BCA, MCA, Photoshop, illustrator</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-header d-flex flex-wrap gap-3 py-3">
+                            <a href=""><i
+                                    class="fa-brands fa-twitter bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-facebook bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-instagram bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-linkedin bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm bg-white ">
+                        <img src="image/team/team-3.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">William Anderson</h4>
+                            <p class="border-bottom">BCA, MCA</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-header d-flex flex-wrap gap-3 py-3">
+                            <a href=""><i
+                                    class="fa-brands fa-twitter bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-facebook bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-instagram bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-linkedin bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card shadow-sm bg-white">
+                        <img src="image/team/team-2.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">Maria Kate</h4>
+                            <p class="border-bottom">B.Tech, M.Tech</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-header d-flex flex-wrap gap-3 py-3">
+                            <a href=""><i
+                                    class="fa-brands fa-twitter bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-facebook bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-instagram bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                            <a href=""><i
+                                    class="fa-brands fa-linkedin bg-secondary text-white fs-6 rounded-circle p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Students Review -->
+        <div id="carouselExampleInterval" class="carousel carousel-dark  slide text-center py-5 "
+            data-bs-ride="carousel">
+            <h1 class="text-center fs-1">Students Reviews</h1>
+            <p>What Our Students Say</p>
+            <!-- Control -->
+            <div class="d-flex justify-content-center mb-5">
+                <button class="carousel-control-prev bg-white shadow rounded-circle p-1" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev"
+                    style="width: 50px; height: 50px; position: absolute; top: 45%; left: 3%">
+                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next bg-white shadow rounded-circle p-1" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="next"
+                    style="width: 50px; height: 50px; position: absolute; top: 45%; right: 3%">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner pb-5">
+                <!-- Single item -->
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top; " />
+                                <h5 class="mb-3">Anna Deynah</h5>
+                                <p>UX Designer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                    officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">John Doe</h5>
+                                <p>Web Developer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid commodi.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">Maria Kate</h5>
+                                <p>Photographer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="far fa-star fa-sm"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://media.istockphoto.com/id/1388253782/photo/positive-successful-millennial-business-professional-man-head-shot-portrait.jpg?b=1&s=612x612&w=0&k=20&c=VsTsa0kjyZ7ALe-nyKAUfynyRxZo8H4LRMdu_ecPuOY="
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">John Doe</h5>
+                                <p>UX Designer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                    officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://media.istockphoto.com/id/1351046939/photo/portrait-of-a-young-adult-man-against-an-old-wall.jpg?b=1&s=612x612&w=0&k=20&c=6qpJ5NwjLGAKbThKO-jrQ6tRGXkB8q_VTNYuuESYj4Q="
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">Alex Rey</h5>
+                                <p>Web Developer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid commodi.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.jpg?b=1&s=612x612&w=0&k=20&c=MsKXmwf7TDRdKRn_lHohhmD5rvVvnGs9ry0xl6CrMT4="
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">Maria Kate</h5>
+                                <p>Photographer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="far fa-star fa-sm"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">Anna Deynah</h5>
+                                <p>UX Designer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                    officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://media.istockphoto.com/id/505653911/photo/hes-the-modern-man.jpg?b=1&s=612x612&w=0&k=20&c=FVMbYAn5SGcI-y8L2Cr56MW85x3MsDSdyowOsksh3XY="
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">John Doe</h5>
+                                <p>Web Developer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid commodi.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <img class="rounded-circle shadow mb-4"
+                                    src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="avatar"
+                                    style="width: 150px; height: 150px; object-fit: cover; object-position: top;" />
+                                <h5 class="mb-3">Maria Kate</h5>
+                                <p>Photographer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti.
+                                </p>
+                                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="far fa-star fa-sm"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -346,7 +703,7 @@
             <div class="col-12 d-xl-flex gap-3 justify-content-center">
                 <div class="col-xl-8 col-lg-12 bg-white shadow-sm  p-4">
                     <h1>Contact</h1>
-                    <form action="https://formspree.io/f/xnqkqvva" method="POST" class="d-grid gap-4">
+                    <form action="" method="POST" class="d-grid gap-4">
                         <div class="row g-4">
                             <div class="col-xl-6 col-lg-12">
                                 <input width="100%" type="text" class="form-control" placeholder="Name*" required>
@@ -396,14 +753,26 @@
                 </div>
             </div>
         </div>
+        <div class="py-2"></div>
 
         <!-- -----------Footer---------- -->
-        <footer class="row footer text-center">
+        <footer class="row  text-center position-absolute bottom-0 w-100" style="height: 3.5rem;">
             <div class="col-12 mt-3">
-                <p>© Copyright 2019 CodingClass | Made by ❤️️<span class="text-primary">Jake Sharma</span></p>
+                <p>© Copyright 2023 CodingClass | Made by ❤️️<span class="text-primary">Jake Sharma</span></p>
             </div>
         </footer>
     </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top-bottom',
+            duration: 500,
+            once: true,
+        });
+    </script>
+
     <script src="js/index.js"></script>
 </body>
 
